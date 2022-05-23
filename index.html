@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #show_products{
+        display: block;
+        margin: 50px auto;
+        padding: 10px 20px;
+        color: white;
+        background-color: rgb(91, 13, 194);
+        border: none;
+        border-radius: 13px;
+        font-size: 20px;
+      }
+      h2{
+        text-align: center;
+      }
+      #products *{
+        display: block;
+        width: 310px;
+        height: 35px;
+        margin: 18px auto;
+        padding: 12px;
+        font-size: 20px;
+      }
+      #products>#add_product{
+        padding: 12px 22px;
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 9px;
+      }
+      #products>#add_product:hover{
+        cursor: pointer;
+        background-color: rgb(196, 45, 146);
+      }
+    </style>
+  </head>
+<body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products">Show products</button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form id="products">
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <input id="type" type="text" placeholder="Type">
+      <input id="desc" type="text" placeholder="Description">
+      <input id="price" type="number" placeholder="Price">
+      <input id="image" type="url" placeholder="Image">
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      <input id="add_product" type="submit" value="Add Product">
+      </form>
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
